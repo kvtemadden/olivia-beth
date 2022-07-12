@@ -1,0 +1,27 @@
+:root {
+  --primary: #849C5D;
+  --secondary: #D4B865;
+  --dark: #040505;
+  --dark-hov: #192222;
+  --white: #fff;
+}
+
+* {
+  font-family:'Cabin', sans-serif;
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.border-0 {
+  border: 0px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.hero-img {
+  background-image: url(/imgs/dog-portrait-1.png);
+}
