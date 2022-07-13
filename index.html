@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><svg width="169" height="73" viewBox="0 0 268 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <nav class="flex items-center justify-between flex-wrap p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <svg width="169" height="73" viewBox="0 0 268 73" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_408_1117)">
             <path d="M25.3011 60.4634C20.7734 60.4117 16.8662 59.5265 13.5683 57.793C10.2668 56.0558 7.58192 53.7579 5.51013 50.881C3.43834 48.0078 1.95374 44.7583 1.06371 41.1363C0.169998 37.5144 -0.162375 33.8407 0.0739794 30.1118C0.310334 26.3829 1.13019 22.7535 2.54831 19.2201C3.96644 15.6903 5.94221 12.5958 8.47933 9.9512C11.0164 7.30665 14.078 5.28173 17.6565 3.88384C21.2351 2.48595 25.3343 2.02122 29.9359 2.49702C32.4139 2.79209 34.6925 3.47444 36.7643 4.54406C38.8361 5.61738 40.69 6.99314 42.3371 8.66765C43.9805 10.3459 45.406 12.2564 46.6136 14.4031C47.8213 16.546 48.8073 18.807 49.5718 21.1823C50.1109 20.9499 50.6169 20.7175 51.0896 20.4889C51.5586 20.2602 52.0646 19.9946 52.6037 19.6959C53.2131 19.4598 53.6895 19.6332 54.0366 20.2196C54.3801 20.8061 54.2841 21.2819 53.7523 21.647C52.5742 22.2519 51.3998 22.8568 50.2254 23.4617C51.2299 27.6369 51.5106 31.9375 51.0859 36.3636C50.6612 40.7896 49.4314 44.7952 47.4113 48.3803C45.3912 51.9691 42.5661 54.8866 38.9395 57.1475C35.3092 59.4122 30.7742 60.5076 25.3048 60.4634H25.3011ZM41.3178 26.8292C37.045 27.9799 33.3298 28.3266 30.1575 27.8508C26.9814 27.375 24.352 26.4013 22.2617 24.9149C20.1715 23.4285 18.6204 21.6212 17.6122 19.4819C16.604 17.3427 16.1461 15.1924 16.2495 13.031C15.0566 15.5501 14.1998 18.4197 13.6717 21.6249C13.1436 24.8338 12.9036 28.1017 12.9442 31.4322C12.9848 34.7628 13.3024 38.0529 13.8896 41.2986C14.4768 44.5481 15.3336 47.4213 16.4637 49.9183C17.5937 52.4154 18.9491 54.4403 20.5334 55.9931C22.1177 57.5459 23.9199 58.3462 25.9511 58.3905C28.7947 58.4385 31.2211 57.5201 33.2522 55.6242C35.2797 53.7284 36.9379 51.2757 38.2304 48.2623C39.5193 45.2489 40.4204 41.8629 40.9263 38.0971C41.4286 34.3313 41.5652 30.5765 41.3215 26.8255L41.3178 26.8292ZM28.5325 4.9129C26.3389 4.66947 24.4296 4.94978 22.8083 5.74647C21.2535 6.53947 20.1198 7.69024 19.3996 9.1914C18.6795 10.6963 18.3877 12.3007 18.5281 14.0047C18.6647 15.7087 19.2187 17.398 20.1863 19.0725C21.1538 20.747 22.583 22.1486 24.4739 23.281C26.361 24.417 28.6802 25.1325 31.4352 25.4387C34.1866 25.7448 37.3921 25.4055 41.0593 24.428C40.7602 21.9605 40.2764 19.5889 39.6042 17.3132C38.9321 15.0375 38.0864 13.0273 37.0597 11.279C36.0331 9.53073 34.7996 8.10333 33.3593 6.99314C31.9153 5.88294 30.3052 5.18953 28.5325 4.91659V4.9129Z" fill="#849C5D"/>
             <path d="M63.8748 19.1979C63.9856 22.4326 64.0964 25.6636 64.2072 28.8983C64.281 31.4027 64.3364 33.7043 64.366 35.8066C64.3992 37.909 64.462 39.7274 64.5617 41.258C64.6614 42.7887 64.8165 44.0022 65.027 44.8874C65.2375 45.7763 65.6105 46.2779 66.1423 46.3922C66.7221 46.5066 67.2798 46.1857 67.819 45.4259C68.3582 44.6698 68.8604 43.6739 69.3331 42.4494C69.8021 41.2212 70.2453 39.8786 70.6626 38.418C71.0762 36.9574 71.4492 35.5816 71.7779 34.2907C71.9478 33.7633 72.1915 33.5641 72.5091 33.6932C72.8267 33.8223 72.9486 34.0768 72.8674 34.4567C72.5387 35.7956 72.2063 37.2635 71.8702 38.8606C71.5305 40.4614 71.0947 41.9551 70.5592 43.353C70.0237 44.7472 69.3257 45.9386 68.4616 46.9234C67.6011 47.9118 66.5043 48.4356 65.1711 48.4983C63.5535 48.6237 62.1502 48.2254 60.9536 47.2922C59.7571 46.3627 58.7636 45.0312 57.977 43.3014C57.1867 41.5715 56.5921 39.4987 56.197 37.0828C55.7981 34.6706 55.6172 32.0408 55.6541 29.2008C55.7095 24.9407 56.0456 21.3409 56.666 18.3976C57.2864 15.4542 58.0878 13.0605 59.0702 11.2126C59.9196 9.65613 60.9684 8.54962 62.2129 7.89678C63.4575 7.24394 64.5654 7.02632 65.533 7.24025C66.5006 7.45417 67.1579 8.09964 67.5014 9.16926C67.8448 10.2426 67.5678 11.6958 66.6778 13.5326C65.7398 15.421 64.8055 17.3095 63.8748 19.1979ZM63.9745 12.2417C63.9044 12.8134 63.86 13.4404 63.8453 14.1264C63.8305 14.8125 63.8157 15.5575 63.8083 16.3616C64.3844 15.1739 64.9643 13.99 65.5441 12.8023C66.1202 11.5925 66.3824 10.6335 66.327 9.92907C66.2679 9.2209 66.0759 8.8078 65.7546 8.67871C65.4296 8.55331 65.0714 8.77092 64.6799 9.33155C64.2884 9.89587 64.0558 10.8622 63.9745 12.238V12.2417Z" fill="#849C5D"/>
@@ -53,36 +57,49 @@
             </clipPath>
             </defs>
             </svg>
-            </a>
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        </div>
+        <div class="block lg:hidden">
+          <button id="tgl" class="flex items-center px-3 py-2">
             <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M28 2.20437C28 1.44996 27.3882 0.839569 26.6352 0.839569H15.6482C15.2863 0.839569 14.9391 0.98336 14.6832 1.23931C14.4272 1.49526 14.2834 1.8424 14.2834 2.20437C14.2834 2.56634 14.4272 2.91348 14.6832 3.16943C14.9391 3.42538 15.2863 3.56917 15.6482 3.56917H26.6352C26.9972 3.56917 27.3443 3.42538 27.6003 3.16943C27.8562 2.91348 28 2.56634 28 2.20437Z" fill="black"/>
-                <path d="M28 10.4412C28 9.68674 27.3882 9.07635 26.6352 9.07635H1.93165C1.56968 9.07635 1.22254 9.22015 0.966587 9.4761C0.710638 9.73204 0.566845 10.0792 0.566845 10.4412C0.566845 10.8031 0.710638 11.1503 0.966587 11.4062C1.22254 11.6622 1.56968 11.806 1.93165 11.806H26.6352C26.9972 11.806 27.3443 11.6622 27.6003 11.4062C27.8562 11.1503 28 10.8031 28 10.4412Z" fill="black"/>
-                <path d="M26.6352 17.3132C26.9972 17.3132 27.3443 17.457 27.6003 17.7129C27.8562 17.9689 28 18.316 28 18.678C28 19.0399 27.8562 19.3871 27.6003 19.643C27.3443 19.899 26.9972 20.0428 26.6352 20.0428H10.1616C9.79962 20.0428 9.45248 19.899 9.19653 19.643C8.94058 19.3871 8.79679 19.0399 8.79679 18.678C8.79679 18.316 8.94058 17.9689 9.19653 17.7129C9.45248 17.457 9.79962 17.3132 10.1616 17.3132H26.6352Z" fill="black"/>
-                </svg>
-        </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="/">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="/about">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="/prints">PRINTS</a>
-              </li>
-            </ul>
+              <path d="M28 2.20437C28 1.44996 27.3882 0.839569 26.6352 0.839569H15.6482C15.2863 0.839569 14.9391 0.98336 14.6832 1.23931C14.4272 1.49526 14.2834 1.8424 14.2834 2.20437C14.2834 2.56634 14.4272 2.91348 14.6832 3.16943C14.9391 3.42538 15.2863 3.56917 15.6482 3.56917H26.6352C26.9972 3.56917 27.3443 3.42538 27.6003 3.16943C27.8562 2.91348 28 2.56634 28 2.20437Z" fill="black"/>
+              <path d="M28 10.4412C28 9.68674 27.3882 9.07635 26.6352 9.07635H1.93165C1.56968 9.07635 1.22254 9.22015 0.966587 9.4761C0.710638 9.73204 0.566845 10.0792 0.566845 10.4412C0.566845 10.8031 0.710638 11.1503 0.966587 11.4062C1.22254 11.6622 1.56968 11.806 1.93165 11.806H26.6352C26.9972 11.806 27.3443 11.6622 27.6003 11.4062C27.8562 11.1503 28 10.8031 28 10.4412Z" fill="black"/>
+              <path d="M26.6352 17.3132C26.9972 17.3132 27.3443 17.457 27.6003 17.7129C27.8562 17.9689 28 18.316 28 18.678C28 19.0399 27.8562 19.3871 27.6003 19.643C27.3443 19.899 26.9972 20.0428 26.6352 20.0428H10.1616C9.79962 20.0428 9.45248 19.899 9.19653 19.643C8.94058 19.3871 8.79679 19.0399 8.79679 18.678C8.79679 18.316 8.94058 17.9689 9.19653 17.7129C9.45248 17.457 9.79962 17.3132 10.1616 17.3132H26.6352Z" fill="black"/>
+              </svg>
+          </button>
+        </div>
+        <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+          <div class="text-sm lg:flex-grow">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-dark hover:text-black/50 mr-4">
+              HOME
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-dark hover:text-black/50 mr-4">
+              ABOUT
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-dark hover:text-black/50">
+              PRINTS
+            </a>
+          </div>
+          <div>
+            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
           </div>
         </div>
       </nav>
+
 <!-- end nav -->
 <!-- start hero -->
 <section class="container-fluid px-2">
-<div class="hero-img"></div> 
-<div></div>
+<div class="mb-4"><div class="hero-img"></div></div>
+<div class="hero-text p-4 mt-8">
+    <div id="paw-print-1" class="absolute"></div>
+    <h1 class="text-4xl pb-4 pr-3">PROFESSIONAL PET PORTRAITS</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eum cumque fugit aperiam</p>
+<div class="two-btn mt-8 flex">
+    <a href="#get-quotes" class="flex-auto md:flex-none btn btn-primary mr-2" >GET QUOTES</a>
+    <a href="/prints.html" class="flex-auto md:flex-none btn btn-primary-ghost" >VIEW PRINTS</a>
+
+</div>
+</div>
 </section>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>    
+<script src="index.js"></script>
 </body>
 </html>
