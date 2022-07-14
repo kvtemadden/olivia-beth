@@ -56,6 +56,8 @@ prevSlide.addEventListener("click", function () {
 // Testimonials
 
 const testimonials = document.querySelectorAll(".testimonial");
+const slideIndex = 0;
+var dots = document.getElementsByClassName("dot");
 
 // loop through slides and set each slides translateX
 testimonials.forEach((testimonial, indx) => {
@@ -72,12 +74,18 @@ let maxTestimonial = testimonials.length - 1;
 
 // add event listener and navigation functionality
 nextTestimonial.addEventListener("click", function () {
-  // check if current slide is the last and reset current slide
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+// check if current slide is the last and reset current slide
   if (curTestimonial === maxTestimonial) {
     curTestimonial = 0;
   } else {
     curTestimonial++;
   }
+
+  dots[curTestimonial].className += " active";
 
   //   move slide by -100%
   testimonials.forEach((testimonial, indx) => {
@@ -90,15 +98,26 @@ const prevTestimonial = document.querySelector(".tbtn-prev");
 
 // add event listener and navigation functionality
 prevTestimonial.addEventListener("click", function () {
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
   // check if current slide is the first and reset current slide to last
   if (curTestimonial === 0) {
     curTestimonial = maxTestimonial;
+
   } else {
     curTestimonial--;
   }
+
+  dots[curTestimonial].className += " active";
 
   //   move slide by 100%
   testimonials.forEach((testimonial, indx) => {
     testimonial.style.transform = `translateX(${100 * (indx - curTestimonial)}%)`;
   });
+
+
+
 });
