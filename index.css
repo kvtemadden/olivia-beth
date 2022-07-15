@@ -2,14 +2,69 @@
 :root {
   --primary: #849C5D;
   --secondary: #D4B865;
+  --faded: #E8E4D8;
   --dark: #040505;
   --dark-hov: #192222;
   --white: #fff;
   --grey: #f5f5f5;
 }
 
+@font-face {
+  font-family: 'Gill Sans Std';
+  src: url('utils/fonts/GillSansStd-Light.woff2') format('woff2'),
+      url('utils/fonts/GillSansStd-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans Std';
+  src: url('utils/fonts/GillSansStd.woff2') format('woff2'),
+      url('utils/fonts/GillSansStd.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans Std';
+  src: url('utils/fonts/GillSansStd-Bold.woff2') format('woff2'),
+      url('utils/fonts/GillSansStd-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'STIXGeneral';
+  src: url('utils/fonts/STIXGeneral-Italic.woff2') format('woff2'),
+      url('utils/fonts/STIXGeneral-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Moonbright Demo';
+  src: url('utils/fonts/MoonbrightDemo.woff2') format('woff2'),
+      url('utils/fonts/MoonbrightDemo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
-  font-family:'Lato', sans-serif;
+  font-family:'Gill Sans Std', sans-serif;
+}
+
+.item-title, .item-price, .two-btn p, footer p {
+  font-family:'Gill Sans Std', sans-serif;
+  font-style: normal;
+}
+
+.moonbright {
+  font-family: 'Moonbright Demo', sans-serif;
 }
 
 .text-dark {
@@ -28,6 +83,22 @@
   background-color: var(--grey);
 }
 
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-faded {
+  background-color: var(--faded);
+}
+
+.border-secondary {
+  border: solid 2px var(--secondary);
+}
+
+.border-primary {
+  border: solid 2px var(--primary);
+}
+
 .border-0 {
   border: 0px;
 }
@@ -44,13 +115,13 @@
 }
 
 h1 {
-  font-weight: 200;
+  font-weight: 300!important;
   font-size: 41px;
   color: var(--dark);
 }
 
 p {
-  font-family: 'STIX Two Text', serif;
+  font-family: 'STIXGeneral', serif;
   font-style: italic;
   font-weight: 500;
   color: var(--dark);
@@ -189,7 +260,7 @@ z-index: 2;
 
 .t-author {
   font-style: normal;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill Sans Std', sans-serif;
 }
 
 .t-author-name {
@@ -217,4 +288,69 @@ transition: background-color 0.6s ease;
 
 .active, .dot:hover {
 background-color: var(--secondary);
+}
+
+
+/* custom radio buttons */
+.checkbox-custom, .radio-custom {
+  opacity: 0;
+  position: absolute;   
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+  position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+  content: '';
+  background: transparent;
+  border: 2px solid var(--primary);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+  content: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.5L4 7.5L9 1.5' stroke='%23849C5D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  color:var(--primary);
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+  content: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.5L4 7.5L9 1.5' stroke='%23849C5D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background: transparent;
+  color: var(--primary);
+}
+
+.radio-custom + .radio-custom-label:before {
+  border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+  content: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.5L4 7.5L9 1.5' stroke='%23849C5D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+outline: 1px solid var(--primary); /* focus style */
+}
+
+.radio-box {
+  right: 0%;
+  bottom: .3rem;
+}
+
+.copyright p {
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5;
 }
