@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <nav class="flex items-center justify-between flex-wrap p-6">
+  <nav class="flex items-center justify-between flex-wrap p-6 sm:w-full sm:absolute">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <svg width="169" height="73" viewBox="0 0 268 73" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_408_1117)">
@@ -130,35 +130,57 @@
       </button>
     </div>
     <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
-      <div class="text-sm lg:flex-grow">
-        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-dark hover:text-black/50 mr-4">
+      <div class="text-sm lg:flex-grow text-center">
+        <a href="#responsive-header"
+          class="block mt-4 lg:inline-block lg:mt-0 text-dark hover:text-black/50 mr-4 sm:mr-14">
           HOME
         </a>
-        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-dark hover:text-black/50 mr-4">
+        <a href="#responsive-header"
+          class="block mt-4 lg:inline-block lg:mt-0 text-dark hover:text-black/50 mr-4 sm:mr-14">
           ABOUT
         </a>
         <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-dark hover:text-black/50">
           PRINTS
         </a>
       </div>
-      <div>
-        <a href="#"
-          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
-      </div>
+    </div>
+    <div class="flex justify-center" id="socials">
+      <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M27.9729 3.28315C28.0561 3.16409 27.9332 3.01036 27.8002 3.06332C26.8546 3.4397 25.8663 3.69364 24.8582 3.81878C25.9807 3.1302 26.8468 2.082 27.3271 0.841018C27.376 0.7146 27.2416 0.601705 27.1256 0.66747C26.0824 1.25908 24.9573 1.68508 23.7886 1.93043C23.7397 1.9407 23.6893 1.9236 23.6549 1.88638C22.7779 0.936071 21.6234 0.30334 20.3649 0.084689C19.0799 -0.138554 17.759 0.0824882 16.6096 0.71315C15.4601 1.34381 14.547 2.34842 14.0134 3.56942C13.5061 4.73035 13.3692 6.02447 13.6194 7.26732C13.6388 7.36375 13.5653 7.45479 13.4696 7.44869C11.1957 7.30366 8.97396 6.68258 6.94127 5.62286C4.91376 4.56584 3.11833 3.09534 1.66436 1.30206C1.59983 1.22247 1.47753 1.23277 1.43051 1.32439C0.978083 2.206 0.741202 3.18861 0.741846 4.1873C0.740009 5.1814 0.97758 6.16054 1.43341 7.03755C1.88923 7.91456 2.54917 8.66221 3.35446 9.21395C2.50044 9.19009 1.66308 8.97328 0.901543 8.5802C0.803401 8.52954 0.68568 8.60167 0.690785 8.71434C0.750169 10.0252 1.21879 11.3411 2.02994 12.3508C2.89314 13.4252 4.09123 14.1605 5.42158 14.4322C4.90947 14.5923 4.37779 14.6766 3.84253 14.6828C3.5512 14.6793 3.26045 14.6573 2.97195 14.6168C2.86497 14.6017 2.77763 14.7061 2.81507 14.8101C3.21187 15.9119 3.91286 16.8734 4.83456 17.5752C5.81997 18.3256 7.00863 18.7418 8.23516 18.7661C6.16402 20.4395 3.60694 21.3529 0.971526 21.3605C0.700728 21.3614 0.430051 21.3524 0.160011 21.3335C0.00783659 21.3228 -0.062151 21.531 0.0690184 21.6109C2.6368 23.1757 5.57171 24.0028 8.56532 23.9991C10.7755 24.0226 12.9682 23.5937 15.0152 22.7374C17.0622 21.881 18.9225 20.6144 20.4874 19.0115C22.0524 17.4086 23.2906 15.5015 24.1298 13.4017C24.969 11.3019 25.3923 9.0514 25.375 6.7817V6.07439C25.375 6.02785 25.3965 5.98408 25.4326 5.95604C26.4063 5.2011 27.2626 4.29978 27.9729 3.28315Z"
+          fill="#849C5D" />
+      </svg>
+      </a>
+      <a href="#">
+        <a href="#">
+          <svg class="mx-4" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.29373 0.00683594C2.38537 0.00683594 0.00505066 2.3871 0.00505066 5.29551V21.7072C0.00505066 24.6156 2.38532 26.995 5.29373 26.995H21.7054C24.6138 26.995 26.9932 24.6156 26.9932 21.7072V5.29551C26.9932 2.38716 24.6138 0.00683594 21.7054 0.00683594H5.29373ZM6.62391 4.46043C8.01841 4.46043 8.87736 5.37589 8.90387 6.57926C8.90387 7.75605 8.01835 8.69724 6.59694 8.69724H6.57077C5.20282 8.69724 4.31865 7.75611 4.31865 6.57926C4.31865 5.37592 5.22958 4.46043 6.62388 4.46043H6.62391ZM18.6411 10.0848C21.3229 10.0848 23.3334 11.8377 23.3334 15.6046V22.6367H19.2577V16.076C19.2577 14.4274 18.6678 13.3027 17.1928 13.3027C16.0668 13.3027 15.3956 14.0608 15.101 14.7931C14.9933 15.0551 14.9669 15.4211 14.9669 15.7876V22.6367H10.8911C10.8911 22.6367 10.9446 11.5231 10.8911 10.3724H14.9677V12.1092C15.5093 11.2735 16.4781 10.0848 18.6411 10.0848V10.0848ZM4.55906 10.3733H8.63479V22.6367H4.55906V10.3733Z"
+              fill="#849C5D" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="14" height="27" viewBox="0 0 14 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.1034 0C8.41155 0 6.78895 0.720901 5.59259 2.00411C4.39624 3.28732 3.72414 5.02773 3.72414 6.84247V10.6521H0.310345C0.138946 10.6521 0 10.8011 0 10.9849V16.0151C0 16.1989 0.138946 16.3479 0.310345 16.3479H3.72414V26.6671C3.72414 26.851 3.86308 27 4.03448 27H8.72414C8.89554 27 9.03448 26.851 9.03448 26.6671V16.3479H12.4785C12.6209 16.3479 12.7451 16.244 12.7796 16.0958L13.952 11.0657C14.001 10.8556 13.8528 10.6521 13.6509 10.6521H9.03448V6.84247C9.03448 6.53838 9.14711 6.24674 9.34758 6.03171C9.54805 5.81669 9.81994 5.69589 10.1034 5.69589H13.6897C13.8611 5.69589 14 5.54686 14 5.36301V0.332877C14 0.149034 13.8611 0 13.6897 0H10.1034Z"
+              fill="#849C5D" />
+          </svg>
+        </a>
     </div>
   </nav>
 
   <!-- end nav -->
   <!-- start hero -->
-  <section class="container-fluid px-2">
+  <section class="container-fluid w-full sm:pt-2 px-2">
     <div class="mb-4">
       <div class="hero-img"></div>
     </div>
-    <div class="hero-text p-4 mt-8">
+    <div class="float-left"></div>
+    <div class="hero-text p-4 mt-8 md:mt-0 lg:mt-8">
       <div id="paw-print-1" class="absolute"></div>
-      <h1 class="text-4xl pb-4 pr-3">PROFESSIONAL PET PORTRAITS</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eum cumque fugit aperiam</p>
-      <div class="two-btn mt-8 flex">
+      <h1 class="text-4xl md:text-4xl lg:text-5xl pb-4 md:pb-2 lg:pb-4 pr-3">PROFESSIONAL PET PORTRAITS</h1>
+      <p class="lg:text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eum cumque fugit aperiam</p>
+      <div class="two-btn mt-8 md:mt-4 lg:mt-8 flex">
         <a href="#get-quotes" class="flex-auto md:flex-none btn btn-primary mr-2">GET QUOTES</a>
         <a href="/prints.html" class="flex-auto md:flex-none btn btn-primary-ghost">VIEW PRINTS</a>
       </div>
@@ -166,18 +188,20 @@
   </section>
   <!-- end hero -->
   <!-- section 1 -->
-  <section class="container-fluid mx-2 px-4 bg-grey pt-14">
+  <section class="container-fluid mx-2 px-4 bg-grey pt-14 lg:flex lg:flex-row-reverse lg:justify-center lg:py-20">
+    <div class="md:max-w-xl sm:ml-8 lg:mx-8 md:m-auto">
     <div id="paw-print-2" class="absolute"></div>
-    <h1 class="text-6xl pb-4 pr-3 text-secondary moonbright">Hi, <span class="text-primary moonbright">I'm Olivia</span>
+    <h1 class="text-6xl lg:text-7xl pb-4 pr-3 text-secondary moonbright">Hi, <span class="text-primary moonbright">I'm Olivia</span>
     </h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas tellus, vitae id. Aliquam non, ornare
+    <p class="lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas tellus, vitae id. Aliquam non, ornare
       interdum leo iaculis. Fermentum, sit gravida eu viverra et, feugiat. Libero non risus euismod elementum, a a.
       Ligula viverra aliquam diam dictumst pellentesque at senectus sed fringilla. Feugiat mi, fermentum vitae ornare
       vestibulum sed. Suscipit sem ullamcorper diam tellus congue. Fames at ut in ipsum.</p>
-    <div class="one-btn mt-8 flex">
-      <a href="/about.html" class="flex-auto md:flex-none btn btn-secondary">LEARN MORE</a>
-    </div>
-    <div><img class="relative left-4" src="imgs/brushes.png" /></div>
+  <div class="one-btn mt-8 flex">
+    <a href="/about.html" class="flex-auto md:flex-none btn btn-secondary">LEARN MORE</a>
+  </div>
+</div>
+  <div><img class="relative left-4 m-auto" src="imgs/brushes.png" /></div>
   </section>
   <!-- end section 1 -->
   <!-- carousel section -->
@@ -220,6 +244,7 @@
   <!-- end carousel section -->
   <!-- testimonial section -->
   <section class="container-fluid mx-2 px-4 bg-grey px-25 mt-3">
+    <div class="testimonial-container">
     <div class="testimonial-items absolute">
       <!-- Control buttons -->
       <button class="tbtn tbtn-next bg-transparent">
@@ -240,7 +265,7 @@
     <!-- Slider container -->
     <div class="testimonial-slider">
       <!-- slide 1 -->
-      <div class="testimonial bg-white p-9 pt-14 text-black/50 text-lg pb-6">
+      <div class="testimonial bg-white lg:p-12 p-9 pt-14 text-black/50 text-lg lg:text-xl pb-6 testimonial-lg">
         <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl urna ornare neque, tellus consectetur aliquam
           libero. Duis quisque eros, amet, aliquet. Quam nibh nulla tellus tincidunt aenean eget parturient eget.
           Suspendisse et nec nulla ut metus vitae. Ullamcorper volutpat tortor, adipiscing pulvinar diam rhoncus in.”
@@ -248,7 +273,7 @@
         <p class="t-author text-base mt-4"><span class="t-author-name">KIM NICHOLLS</span>, Dog Owner 'Nixie'</p>
       </div>
       <!-- slide 2 -->
-      <div class="testimonial bg-white p-9 pt-14 text-black/50 text-lg pb-6">
+      <div class="testimonial bg-white p-9 pt-14 text-black/50 text-lg lg:text-xl pb-6 testimonial-lg">
         <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl urna ornare neque, tellus consectetur aliquam
           libero. Duis quisque eros, amet, aliquet. Quam nibh nulla tellus tincidunt aenean eget parturient eget.
           Suspendisse et nec nulla ut metus vitae. Ullamcorper volutpat tortor, adipiscing pulvinar diam rhoncus in.”
@@ -256,7 +281,7 @@
         <p class="t-author text-base mt-4"><span class="t-author-name">KIM NICHOLLS</span>, Dog Owner 'Nixie'</p>
       </div>
       <!-- slide 3 -->
-      <div class="testimonial bg-white p-9 pt-14 text-black/50 text-lg pb-6">
+      <div class="testimonial bg-white p-9 pt-14 text-black/50 text-lg lg:text-xl pb-6">
         <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl urna ornare neque, tellus consectetur aliquam
           libero. Duis quisque eros, amet, aliquet. Quam nibh nulla tellus tincidunt aenean eget parturient eget.
           Suspendisse et nec nulla ut metus vitae. Ullamcorper volutpat tortor, adipiscing pulvinar diam rhoncus in.”
@@ -264,12 +289,12 @@
         <p class="t-author text-base mt-4"><span class="t-author-name">KIM NICHOLLS</span>, Dog Owner 'Nixie'</p>
       </div>
       <!-- slide 4 -->
-      <div class="testimonial bg-white p-9 pt-14 text-black/50 text-lg pb-6">
+      <div class="testimonial bg-white p-9 pt-14 text-black/50 text-lg lg:text-xl pb-6">
         <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl urna ornare neque, tellus consectetur aliquam
           libero. Duis quisque eros, amet, aliquet. Quam nibh nulla tellus tincidunt aenean eget parturient eget.
           Suspendisse et nec nulla ut metus vitae. Ullamcorper volutpat tortor, adipiscing pulvinar diam rhoncus in.”
         </p>
-        <p class="t-author text-base mt-4"><span class="t-author-name">KIM NICHOLLS</span>, Dog Owner 'Nixie'</p>
+        <p class="t-author text-base mt-4 lg:text-xl"><span class="t-author-name">KIM NICHOLLS</span>, Dog Owner 'Nixie'</p>
       </div>
     </div>
     <div class="dot-container">
@@ -278,16 +303,18 @@
       <span class="dot" id="dot-3"></span>
       <span class="dot" id="dot-4"></span>
     </div>
+  </div>
   </section>
   <!-- end testimonial section -->
   <!-- start section -->
-  <section class="container-fluid mx-2 mt-2">
-    <div><img class="relative" src="imgs/dog-portait-2.png" /></div>
-    <div class="bg-secondary px-4 pb-12">
-      <h1 class="text-6xl pb-2 pr-3 text-white moonbright pt-12" id="paw-print-3">The Perfect <span
+  <section class="container-fluid mx-2 mt-2 lg:flex lg:flex-row-reverse">
+    <div class="lg:flex-1"><img class="relative w-full h-full" src="imgs/dog-portait-2.png" /></div>
+    <div class="bg-secondary px-4 pb-12 lg:flex-1 lg:flex align-items-center">
+    <div class="md:max-w-2xl lg:max-w-lg lg:m-auto">
+      <h1 class="text-6xl lg:text-7xl pb-2 pr-3 text-white moonbright pt-12" id="paw-print-3">The Perfect <span
           class="text-primary moonbright">Gift</span></h1>
       <!--add pawprint-->
-      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas tellus, vitae id.
+      <p class="text-white lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas tellus, vitae id.
         Aliquam non, ornare
         interdum leo iaculis. Fermentum, sit gravida eu viverra et, feugiat. Libero non risus euismod elementum, a a.
         Ligula viverra aliquam diam dictumst pellentesque at senectus sed fringilla.</p>
@@ -295,20 +322,19 @@
         <a href="/prints.html" class="flex-auto md:flex-none btn btn-primary">LEARN MORE</a>
       </div>
     </div>
+    </div>
   </section>
   <!-- end section -->
   <!-- start section -->
   <section class="container-fluid mx-2 px-4 bg-grey pt-14 mt-2 pb-10">
+    <div class="md:max-w-6xl md:m-auto text-center">
     <h1 class="text-6xl pb-4 pr-3 text-secondary moonbright">Let's Get <span
         class="text-primary moonbright">Started!</span></h1>
-    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas tellus, vitae id.
+    <p class="text-center lg:text-xl md:max-w-3xl md:m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas tellus, vitae id.
       Aliquam non, ornare
       interdum leo iaculis. Fermentum, sit gravida eu viverra et, feugiat.</p>
-    <div class="one-btn mt-8 flex">
-      <a href="/about.html" class="flex-auto md:flex-none btn btn-secondary">LEARN MORE</a>
-    </div>
     <div class="pt-10">
-      <form class="w-full max-w-lg">
+      <form class="w-full md:max-w-6xl">
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 md:mb-0">
             <input
@@ -330,10 +356,10 @@
               class="appearance-none block w-full bg-white text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-tel" type="tel" placeholder="PHONE">
           </div>
-          <div class="w-full md:w-1/2 px-3 mt-8" onclick="selectItem('radio-1')">
+          <div class="w-full md:w-1/3 px-3 mt-8 md:my-4" onclick="selectItem('radio-1')">
             <div id="radio-1-item"
               class="appearance-none block w-full bg-white text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-secondary cursor-pointer product-item">
-              <div>
+              <div class="text-left">
                 <label for="watercolour" class="radio-1-item-title" data-title="watercolour"
                   data-time="8">WATERCOLOUR</label>
                 <p class="radio-1-item-price item-price -mt-2" data-price="100">(+£100)</p>
@@ -346,10 +372,10 @@
               </div>
             </div>
           </div>
-          <div class="w-full md:w-1/2 px-3" onclick="selectItem('radio-2')">
+          <div class="w-full md:w-1/3 px-3 md:my-4" onclick="selectItem('radio-2')">
             <div id="radio-2-item"
               class="appearance-none block w-full bg-white text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-secondary cursor-pointer product-item">
-              <div>
+              <div class="text-left">
                 <label for="watercolour" class="radio-2-item-title" data-title="faster-turnaround" data-time="-2">FASTER
                   TURNAROUND</label>
                 <p class="radio-2-item-price item-price -mt-2" data-price="100">(+£100)</p>
@@ -362,10 +388,10 @@
               </div>
             </div>
           </div>
-          <div class="w-full md:w-1/2 px-3 mb-8" onclick="selectItem('radio-3')">
+          <div class="w-full md:w-1/3 px-3 mb-8 md:my-4" onclick="selectItem('radio-3')">
             <div id="radio-3-item"
               class="appearance-none block w-full bg-white text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-secondary cursor-pointer product-item">
-              <div>
+              <div class="text-left">
                 <label for="watercolour" class="radio-3-item-title" data-title="larger-size" data-time="5">LARGER
                   SIZE</label>
                 <p class="radio-3-item-price item-price -mt-2" data-price="100">(+£100)</p>
@@ -378,15 +404,15 @@
               </div>
             </div>
           </div>
-          <div class="w-full md:w-1/2 px-3">
+          <div class="w-full md:w-full px-3">
             <textarea
               class="appearance-none block w-full bg-white text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-40"
               id="grid-comments" type="text" placeholder="COMMENTS"></textarea>
           </div>
-          <div class="two-btn mt-10 w-full px-3 flex flex-col">
-            <p class="flex-auto md:flex-none btn bg-faded mb-2 text-left">ESTIMATED COST: <span id="est-cost"
+          <div class="two-btn mt-10 w-full px-3 flex flex-col lg:flex-row">
+            <p class="flex-auto md:flex-none btn bg-faded mb-2 text-left lg:w-1/2 lg:mr-2">ESTIMATED COST: <span id="est-cost"
                 class="font-bold"></span></p>
-            <p class="flex-auto md:flex-none btn bg-faded text-left">ESTIMATED TIME: <span id="est-time"
+            <p class="flex-auto md:flex-none btn bg-faded text-left lg:w-1/2 lg:mb-2">ESTIMATED TIME: <span id="est-time"
                 class="font-bold"></span></p>
           </div>
           <div class="one-btn w-full px-3 mt-4 flex">
@@ -395,6 +421,7 @@
         </div>
       </form>
     </div>
+  </div>
   </section>
   <!-- end section -->
   <!-- footer -->
@@ -510,28 +537,28 @@
     </div>
     <div class="flex justify-center mt-8">
       <a href="#"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M5.29373 0.00683594C2.38537 0.00683594 0.00505066 2.3871 0.00505066 5.29551V21.7072C0.00505066 24.6156 2.38532 26.995 5.29373 26.995H21.7054C24.6138 26.995 26.9932 24.6156 26.9932 21.7072V5.29551C26.9932 2.38716 24.6138 0.00683594 21.7054 0.00683594H5.29373ZM6.62391 4.46043C8.01841 4.46043 8.87736 5.37589 8.90387 6.57926C8.90387 7.75605 8.01835 8.69724 6.59694 8.69724H6.57077C5.20282 8.69724 4.31865 7.75611 4.31865 6.57926C4.31865 5.37592 5.22958 4.46043 6.62388 4.46043H6.62391ZM18.6411 10.0848C21.3229 10.0848 23.3334 11.8377 23.3334 15.6046V22.6367H19.2577V16.076C19.2577 14.4274 18.6678 13.3027 17.1928 13.3027C16.0668 13.3027 15.3956 14.0608 15.101 14.7931C14.9933 15.0551 14.9669 15.4211 14.9669 15.7876V22.6367H10.8911C10.8911 22.6367 10.9446 11.5231 10.8911 10.3724H14.9677V12.1092C15.5093 11.2735 16.4781 10.0848 18.6411 10.0848V10.0848ZM4.55906 10.3733H8.63479V22.6367H4.55906V10.3733Z"
-          fill="#849C5D" />
-      </svg>
-    </a>
-    <a href="#">
-      <svg class="mx-3" width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M27.9729 3.28315C28.0561 3.16409 27.9332 3.01036 27.8002 3.06332C26.8546 3.4397 25.8663 3.69364 24.8582 3.81878C25.9807 3.1302 26.8468 2.082 27.3271 0.841018C27.376 0.7146 27.2416 0.601705 27.1256 0.66747C26.0824 1.25908 24.9573 1.68508 23.7886 1.93043C23.7397 1.9407 23.6893 1.9236 23.6549 1.88638C22.7779 0.936071 21.6234 0.30334 20.3649 0.084689C19.0799 -0.138554 17.759 0.0824882 16.6096 0.71315C15.4601 1.34381 14.547 2.34842 14.0134 3.56942C13.5061 4.73035 13.3692 6.02447 13.6194 7.26732C13.6388 7.36375 13.5653 7.45479 13.4696 7.44869C11.1957 7.30366 8.97396 6.68258 6.94127 5.62286C4.91376 4.56584 3.11833 3.09534 1.66436 1.30206C1.59983 1.22247 1.47753 1.23277 1.43051 1.32439C0.978083 2.206 0.741202 3.18861 0.741846 4.1873C0.740009 5.1814 0.97758 6.16054 1.43341 7.03755C1.88923 7.91456 2.54917 8.66221 3.35446 9.21395C2.50044 9.19009 1.66308 8.97328 0.901543 8.5802C0.803401 8.52954 0.68568 8.60167 0.690785 8.71434C0.750169 10.0252 1.21879 11.3411 2.02994 12.3508C2.89314 13.4252 4.09123 14.1605 5.42158 14.4322C4.90947 14.5923 4.37779 14.6766 3.84253 14.6828C3.5512 14.6793 3.26045 14.6573 2.97195 14.6168C2.86497 14.6017 2.77763 14.7061 2.81507 14.8101C3.21187 15.9119 3.91286 16.8734 4.83456 17.5752C5.81997 18.3256 7.00863 18.7418 8.23516 18.7661C6.16402 20.4395 3.60694 21.3529 0.971526 21.3605C0.700728 21.3614 0.430051 21.3524 0.160011 21.3335C0.00783659 21.3228 -0.062151 21.531 0.0690184 21.6109C2.6368 23.1757 5.57171 24.0028 8.56532 23.9991C10.7755 24.0226 12.9682 23.5937 15.0152 22.7374C17.0622 21.881 18.9225 20.6144 20.4874 19.0115C22.0524 17.4086 23.2906 15.5015 24.1298 13.4017C24.969 11.3019 25.3923 9.0514 25.375 6.7817V6.07439C25.375 6.02785 25.3965 5.98408 25.4326 5.95604C26.4063 5.2011 27.2626 4.29978 27.9729 3.28315Z"
-          fill="#849C5D" />
-      </svg>
-    </a>
-    <a href="#">
-      <svg width="14" height="27" viewBox="0 0 14 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M10.1034 0C8.41155 0 6.78895 0.720901 5.59259 2.00411C4.39624 3.28732 3.72414 5.02773 3.72414 6.84247V10.6521H0.310345C0.138946 10.6521 0 10.8011 0 10.9849V16.0151C0 16.1989 0.138946 16.3479 0.310345 16.3479H3.72414V26.6671C3.72414 26.851 3.86308 27 4.03448 27H8.72414C8.89554 27 9.03448 26.851 9.03448 26.6671V16.3479H12.4785C12.6209 16.3479 12.7451 16.244 12.7796 16.0958L13.952 11.0657C14.001 10.8556 13.8528 10.6521 13.6509 10.6521H9.03448V6.84247C9.03448 6.53838 9.14711 6.24674 9.34758 6.03171C9.54805 5.81669 9.81994 5.69589 10.1034 5.69589H13.6897C13.8611 5.69589 14 5.54686 14 5.36301V0.332877C14 0.149034 13.8611 0 13.6897 0H10.1034Z"
-          fill="#849C5D" />
-      </svg>
-    </a>
+          <path
+            d="M5.29373 0.00683594C2.38537 0.00683594 0.00505066 2.3871 0.00505066 5.29551V21.7072C0.00505066 24.6156 2.38532 26.995 5.29373 26.995H21.7054C24.6138 26.995 26.9932 24.6156 26.9932 21.7072V5.29551C26.9932 2.38716 24.6138 0.00683594 21.7054 0.00683594H5.29373ZM6.62391 4.46043C8.01841 4.46043 8.87736 5.37589 8.90387 6.57926C8.90387 7.75605 8.01835 8.69724 6.59694 8.69724H6.57077C5.20282 8.69724 4.31865 7.75611 4.31865 6.57926C4.31865 5.37592 5.22958 4.46043 6.62388 4.46043H6.62391ZM18.6411 10.0848C21.3229 10.0848 23.3334 11.8377 23.3334 15.6046V22.6367H19.2577V16.076C19.2577 14.4274 18.6678 13.3027 17.1928 13.3027C16.0668 13.3027 15.3956 14.0608 15.101 14.7931C14.9933 15.0551 14.9669 15.4211 14.9669 15.7876V22.6367H10.8911C10.8911 22.6367 10.9446 11.5231 10.8911 10.3724H14.9677V12.1092C15.5093 11.2735 16.4781 10.0848 18.6411 10.0848V10.0848ZM4.55906 10.3733H8.63479V22.6367H4.55906V10.3733Z"
+            fill="#849C5D" />
+        </svg>
+      </a>
+      <a href="#">
+        <svg class="mx-3" width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M27.9729 3.28315C28.0561 3.16409 27.9332 3.01036 27.8002 3.06332C26.8546 3.4397 25.8663 3.69364 24.8582 3.81878C25.9807 3.1302 26.8468 2.082 27.3271 0.841018C27.376 0.7146 27.2416 0.601705 27.1256 0.66747C26.0824 1.25908 24.9573 1.68508 23.7886 1.93043C23.7397 1.9407 23.6893 1.9236 23.6549 1.88638C22.7779 0.936071 21.6234 0.30334 20.3649 0.084689C19.0799 -0.138554 17.759 0.0824882 16.6096 0.71315C15.4601 1.34381 14.547 2.34842 14.0134 3.56942C13.5061 4.73035 13.3692 6.02447 13.6194 7.26732C13.6388 7.36375 13.5653 7.45479 13.4696 7.44869C11.1957 7.30366 8.97396 6.68258 6.94127 5.62286C4.91376 4.56584 3.11833 3.09534 1.66436 1.30206C1.59983 1.22247 1.47753 1.23277 1.43051 1.32439C0.978083 2.206 0.741202 3.18861 0.741846 4.1873C0.740009 5.1814 0.97758 6.16054 1.43341 7.03755C1.88923 7.91456 2.54917 8.66221 3.35446 9.21395C2.50044 9.19009 1.66308 8.97328 0.901543 8.5802C0.803401 8.52954 0.68568 8.60167 0.690785 8.71434C0.750169 10.0252 1.21879 11.3411 2.02994 12.3508C2.89314 13.4252 4.09123 14.1605 5.42158 14.4322C4.90947 14.5923 4.37779 14.6766 3.84253 14.6828C3.5512 14.6793 3.26045 14.6573 2.97195 14.6168C2.86497 14.6017 2.77763 14.7061 2.81507 14.8101C3.21187 15.9119 3.91286 16.8734 4.83456 17.5752C5.81997 18.3256 7.00863 18.7418 8.23516 18.7661C6.16402 20.4395 3.60694 21.3529 0.971526 21.3605C0.700728 21.3614 0.430051 21.3524 0.160011 21.3335C0.00783659 21.3228 -0.062151 21.531 0.0690184 21.6109C2.6368 23.1757 5.57171 24.0028 8.56532 23.9991C10.7755 24.0226 12.9682 23.5937 15.0152 22.7374C17.0622 21.881 18.9225 20.6144 20.4874 19.0115C22.0524 17.4086 23.2906 15.5015 24.1298 13.4017C24.969 11.3019 25.3923 9.0514 25.375 6.7817V6.07439C25.375 6.02785 25.3965 5.98408 25.4326 5.95604C26.4063 5.2011 27.2626 4.29978 27.9729 3.28315Z"
+            fill="#849C5D" />
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="14" height="27" viewBox="0 0 14 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.1034 0C8.41155 0 6.78895 0.720901 5.59259 2.00411C4.39624 3.28732 3.72414 5.02773 3.72414 6.84247V10.6521H0.310345C0.138946 10.6521 0 10.8011 0 10.9849V16.0151C0 16.1989 0.138946 16.3479 0.310345 16.3479H3.72414V26.6671C3.72414 26.851 3.86308 27 4.03448 27H8.72414C8.89554 27 9.03448 26.851 9.03448 26.6671V16.3479H12.4785C12.6209 16.3479 12.7451 16.244 12.7796 16.0958L13.952 11.0657C14.001 10.8556 13.8528 10.6521 13.6509 10.6521H9.03448V6.84247C9.03448 6.53838 9.14711 6.24674 9.34758 6.03171C9.54805 5.81669 9.81994 5.69589 10.1034 5.69589H13.6897C13.8611 5.69589 14 5.54686 14 5.36301V0.332877C14 0.149034 13.8611 0 13.6897 0H10.1034Z"
+            fill="#849C5D" />
+        </svg>
+      </a>
     </div>
     <div class="flex justify-center mt-8 text-sm">
-     <a href="#">COOKIES</a><span class="mx-2">|</span><a href="#">PRIVACY POLICY</a>
+      <a href="#">COOKIES</a><span class="mx-2">|</span><a href="#">PRIVACY POLICY</a>
     </div>
     <div class="flex justify-center text-center text-sm copyright mt-4">
       <p>Copyright © 2022 Pet Painting by Olivia Beth. All rights reserved</p>

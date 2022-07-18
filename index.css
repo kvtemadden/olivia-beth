@@ -114,6 +114,34 @@
   background-size: cover;
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero-img {
+    height: 45vw;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 25%;
+    left: 53%;
+    max-width: 400px;
+    z-index: 1;
+  } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero-img {
+    height: 45vw;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    max-width: 400px;
+    z-index: 1;
+  } 
+}
+
 h1 {
   font-weight: 300!important;
   font-size: 41px;
@@ -197,11 +225,16 @@ p {
 
 .slider, .testimonial-slider {
   width: 100%;
-  max-width: 800px;
-  height: 350px;
+  max-width: 755px;
+  height: 470px;
   position: relative;
   overflow: hidden; /* <===  */
   z-index: 1;
+}
+
+.testimonial-container {
+  max-width: 755px;
+  margin: auto;
 }
 
 .slide, .testimonial {
@@ -210,10 +243,6 @@ p {
   height: 350px;
   position: absolute;
   transition: all 0.5s;
-}
-
-.testimonial, .testimonial-slider {
-  height: 470px;
 }
 
 .slide img, .testimonial {
@@ -263,7 +292,30 @@ p {
   content: url("data:image/svg+xml,%3Csvg width='94' height='106' viewBox='0 0 94 106' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M46.9926 2.06855e-07C53.1654 -0.000576154 59.2779 1.20329 64.9809 3.54285C70.684 5.88241 75.866 9.31185 80.2311 13.6353C84.5961 17.9588 88.0587 23.0916 90.421 28.7408C92.7834 34.3899 93.9993 40.4446 93.9993 46.5592C93.9993 70.8723 71.608 88.8746 56.3629 105.446V92.1924C53.2784 92.8093 50.1394 93.1195 46.9926 93.1184C34.5284 93.1161 22.5755 88.2097 13.7628 79.4784C4.95006 70.7472 -0.000732643 58.906 -0.000732422 46.5592C-0.000732643 34.2125 4.95006 22.3713 13.7628 13.64C22.5755 4.90869 34.5284 0.00232781 46.9926 2.06855e-07Z' fill='%23D4B865'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M48.5483 33.8221H63.9993V49.2347C63.9993 53.3258 62.3714 57.2495 59.4738 60.1424C56.5762 63.0353 52.6462 64.6604 48.5483 64.6604V58.2091C50.9312 58.2091 53.2165 57.2641 54.9014 55.5819C56.5864 53.8996 57.533 51.6181 57.533 49.2391H48.5483V33.8221ZM29.9993 33.8221H45.4546V49.2347C45.4546 51.2608 45.0548 53.267 44.2781 55.1389C43.5013 57.0107 42.3628 58.7114 40.9276 60.1439C39.4924 61.5764 37.7885 62.7125 35.9134 63.4875C34.0383 64.2625 32.0287 64.661 29.9993 64.6604V58.2091C32.3821 58.2091 34.6674 57.2641 36.3524 55.5819C38.0373 53.8996 38.9839 51.6181 38.9839 49.2391H29.9993V33.8221Z' fill='white'/%3E%3C/svg%3E");
   position: relative;
   top: -4rem;
-  left: 7.5rem;
+  left: 32%;
+}
+
+@media only screen and (min-width: 450px) {
+  .testimonial-items::before {
+  left: 40%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+.testimonial-lg {
+  transform: translateX(0%);
+  height: 300px;
+  padding: 4rem;
+}
+
+.tbtn-next, .tbtn-prev {
+  top: 30%
+}
+
+.testimonial, .testimonial-slider {
+  height: 350px;
+}
+
 }
 
 .testimonial-items {
@@ -374,4 +426,10 @@ outline: 1px solid var(--primary); /* focus style */
   font-style: italic;
   font-weight: 300;
   line-height: 1.5;
+}
+
+@media only screen and (max-width: 1023.5px) {
+  #socials {
+    display: none;
+  }
 }
