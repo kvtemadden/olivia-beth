@@ -176,10 +176,10 @@
       <div class="hero-img"></div>
     </div>
     <div class="float-left"></div>
-    <div class="hero-text p-4 mt-8 md:mt-0 lg:mt-8">
+    <div class="hero-text p-4 mt-8 md:mt-0 lg:mt-8 md:max-w-md">
       <div id="paw-print-1" class="absolute"></div>
       <h1 class="text-4xl md:text-4xl lg:text-5xl pb-4 md:pb-2 lg:pb-4 pr-3">PROFESSIONAL PET PORTRAITS</h1>
-      <p class="lg:text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eum cumque fugit aperiam</p>
+      <p class="lg:text-xl md:max-w-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eum cumque fugit aperiam</p>
       <div class="two-btn mt-8 md:mt-4 lg:mt-8 flex">
         <a href="#get-quotes" class="flex-auto md:flex-none btn btn-primary mr-2">GET QUOTES</a>
         <a href="/prints.html" class="flex-auto md:flex-none btn btn-primary-ghost">VIEW PRINTS</a>
@@ -201,7 +201,13 @@
     <a href="/about.html" class="flex-auto md:flex-none btn btn-secondary">LEARN MORE</a>
   </div>
 </div>
-  <div><img class="relative left-4 m-auto" src="imgs/brushes.png" /></div>
+  <div>
+   <picture>
+    <source srcset="imgs/brushes.png" media="(max-width: 1024px)">
+    <img class="relative left-4 m-auto" src="imgs/brushes_full.png" alt="paintbrushes">
+  </picture>
+</div>
+   
   </section>
   <!-- end section 1 -->
   <!-- carousel section -->
@@ -209,19 +215,19 @@
     <!-- Slider container -->
     <div class="slider">
       <!-- slide 1 -->
-      <div class="slide">
+      <div class="slide md:pr-2">
         <img src="imgs/slider-img-1.png" alt="" />
       </div>
       <!-- slide 2 -->
-      <div class="slide">
+      <div class="slide md:pr-2">
         <img src="imgs/slider-img-1.png" alt="" />
       </div>
       <!-- slide 3 -->
-      <div class="slide">
+      <div class="slide md:pr-2">
         <img src="imgs/slider-img-1.png" alt="" />
       </div>
       <!-- slide 4 -->
-      <div class="slide">
+      <div class="slide md:pr-2">
         <img src="imgs/slider-img-1.png" alt="" />
       </div>
       <!-- Control buttons -->
@@ -415,7 +421,7 @@
             <p class="flex-auto md:flex-none btn bg-faded text-left lg:w-1/2 lg:mb-2">ESTIMATED TIME: <span id="est-time"
                 class="font-bold"></span></p>
           </div>
-          <div class="one-btn w-full px-3 mt-4 flex">
+          <div class="one-btn w-full px-3 mt-4 flex md:justify-center">
             <a href="#" class="flex-auto md:flex-none btn btn-primary">SEND</a>
           </div>
         </div>
@@ -519,7 +525,8 @@
         </defs>
       </svg>
     </div>
-    <div class="flex justify-center my-4">
+    <div class="flex flex-col md:flex-row md:max-w-xl md:m-auto md:mt-4">
+    <div class="flex justify-center my-4 md:w-1/3">
       <svg class="mr-2" width="18" height="30" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M2.256 6.80148C4.04331 10.6934 7.2238 13.7875 11.1776 15.4641L11.19 15.4694L11.9539 15.8099C12.9265 16.2432 14.0697 15.9354 14.6933 15.0724L15.9677 13.3086C16.0455 13.2009 16.0255 13.0511 15.922 12.9676L13.6973 11.1728C13.5867 11.0836 13.4241 11.1044 13.3395 11.2186L12.4736 12.3869C12.2633 12.6707 11.8836 12.7693 11.5618 12.6237C8.60539 11.2857 6.22968 8.91004 4.89175 5.95363C4.74614 5.63187 4.84474 5.25212 5.12849 5.04184L6.29686 4.17598C6.41103 4.09137 6.43181 3.92875 6.34259 3.81815L4.54755 1.59311C4.46412 1.48969 4.31437 1.46961 4.20664 1.54738L2.43335 2.82754C1.56456 3.45473 1.2586 4.60757 1.70206 5.58302L2.2554 6.80018C2.2556 6.80062 2.2558 6.80105 2.256 6.80148ZM10.5857 16.8424C6.28963 15.0188 2.83427 11.6558 0.892223 7.42607L0.891054 7.42353L0.336551 6.20381C-0.402549 4.57806 0.10738 2.65665 1.55536 1.61134L3.32865 0.33118C4.08277 -0.213227 5.131 -0.0726221 5.715 0.651271L7.51004 2.87632C8.1346 3.65049 7.98913 4.78888 7.18997 5.38112L6.52047 5.87727C7.65138 8.07167 9.44376 9.86405 11.6382 10.995L12.1343 10.3255C12.7266 9.52629 13.865 9.38083 14.6391 10.0054L16.8639 11.8002C17.588 12.3844 17.7284 13.433 17.1835 14.1871L15.9092 15.9509C14.8698 17.3893 12.9644 17.9023 11.3434 17.18L10.5857 16.8424Z"
@@ -527,7 +534,7 @@
       </svg>
       <p>01542 525 859</p>
     </div>
-    <div class="flex justify-center">
+    <div class="flex justify-center md:w-1/3 md:my-4">
       <svg class="mr-2" width="19" height="30" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M0.192702 3.89399C-0.0874415 6.23246 -0.074954 8.92949 0.314869 11.2585C0.530567 12.5471 1.70124 13.5351 3.14631 13.6479L4.65654 13.7659C7.80558 14.0118 10.9724 14.0118 14.1215 13.7659L15.6317 13.6479C17.0768 13.5351 18.2475 12.5471 18.4632 11.2585C18.853 8.92948 18.8655 6.23262 18.5853 3.89413C18.5491 3.62303 18.5084 3.35228 18.4632 3.082C18.2475 1.79332 17.0768 0.805387 15.6317 0.692531L14.1215 0.574586C10.9724 0.328654 7.80558 0.328654 4.65654 0.574586L3.14631 0.692531C1.70124 0.805387 0.530567 1.79332 0.314869 3.082C0.269637 3.35224 0.228914 3.62293 0.192702 3.89399ZM4.78644 1.91714C7.84905 1.67796 10.929 1.67796 13.9916 1.91714L15.5018 2.03509C16.2562 2.094 16.8672 2.6097 16.9798 3.28239C16.9915 3.35225 17.0029 3.42214 17.014 3.49206L11.453 6.26766C10.1694 6.90833 8.60859 6.90833 7.325 6.26766L1.76406 3.49209C1.77512 3.42216 1.7865 3.35226 1.79819 3.28239C1.91079 2.6097 2.52188 2.094 3.27621 2.03509L4.78644 1.91714ZM17.1975 4.94207C17.3915 6.97945 17.3189 9.03219 16.9798 11.0581C16.8672 11.7308 16.2562 12.2465 15.5018 12.3054L13.9916 12.4233C10.929 12.6625 7.84905 12.6625 4.78644 12.4233L3.27621 12.3054C2.52188 12.2465 1.91079 11.7308 1.79819 11.0581C1.4591 9.0322 1.38654 6.97947 1.58051 4.9421L6.59653 7.44569C8.33316 8.31247 10.4448 8.31247 12.1814 7.44569L17.1975 4.94207Z"
@@ -535,7 +542,7 @@
       </svg>
       <p><a href="mailto:hello@oliviabeth.co.uk">hello@oliviabeth.co.uk</a></p>
     </div>
-    <div class="flex justify-center mt-8">
+    <div class="flex justify-center mt-8 md:w-1/3 md:my-4">
       <a href="#"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M5.29373 0.00683594C2.38537 0.00683594 0.00505066 2.3871 0.00505066 5.29551V21.7072C0.00505066 24.6156 2.38532 26.995 5.29373 26.995H21.7054C24.6138 26.995 26.9932 24.6156 26.9932 21.7072V5.29551C26.9932 2.38716 24.6138 0.00683594 21.7054 0.00683594H5.29373ZM6.62391 4.46043C8.01841 4.46043 8.87736 5.37589 8.90387 6.57926C8.90387 7.75605 8.01835 8.69724 6.59694 8.69724H6.57077C5.20282 8.69724 4.31865 7.75611 4.31865 6.57926C4.31865 5.37592 5.22958 4.46043 6.62388 4.46043H6.62391ZM18.6411 10.0848C21.3229 10.0848 23.3334 11.8377 23.3334 15.6046V22.6367H19.2577V16.076C19.2577 14.4274 18.6678 13.3027 17.1928 13.3027C16.0668 13.3027 15.3956 14.0608 15.101 14.7931C14.9933 15.0551 14.9669 15.4211 14.9669 15.7876V22.6367H10.8911C10.8911 22.6367 10.9446 11.5231 10.8911 10.3724H14.9677V12.1092C15.5093 11.2735 16.4781 10.0848 18.6411 10.0848V10.0848ZM4.55906 10.3733H8.63479V22.6367H4.55906V10.3733Z"
@@ -557,12 +564,15 @@
         </svg>
       </a>
     </div>
-    <div class="flex justify-center mt-8 text-sm">
+  </div>
+  <div class="flex flex-col md:flex-row md:max-w-xl md:m-auto">
+    <div class="flex justify-center mt-8 text-sm md:w-1/3">
       <a href="#">COOKIES</a><span class="mx-2">|</span><a href="#">PRIVACY POLICY</a>
     </div>
-    <div class="flex justify-center text-center text-sm copyright mt-4">
-      <p>Copyright © 2022 Pet Painting by Olivia Beth. All rights reserved</p>
+    <div class="flex justify-center text-center text-sm copyright mt-4 md:w-2/3">
+      <p style="line-height: 3.5">Copyright © 2022 Pet Painting by Olivia Beth. All rights reserved</p>
     </div>
+  </div>
   </footer>
   <script src="index.js"></script>
 </body>
