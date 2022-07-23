@@ -125,6 +125,15 @@
 }
 }
 
+@media only screen and (min-width: 768px) {
+.hero--text {
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 12vw;
+    box-sizing: border-box;
+}
+}
+
 .hero-img {
   background-image: url(imgs/dog-portrait-1.png);
   height: 75vw;
