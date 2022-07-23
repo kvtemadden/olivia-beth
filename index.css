@@ -129,11 +129,18 @@
 .hero--text {
     width: 100%;
     margin-left: 50%;
-    margin-top: 12vw;
+    margin-top: 12vw!important;
     box-sizing: border-box;
 }
 }
 
+@media only screen and (max-width: 767px) {
+section.hero-img {
+  height: fit-content;
+  background: none;
+}
+}
+  
 .hero-img {
   background-image: url(imgs/dog-portrait-1.png);
   height: 75vw;
