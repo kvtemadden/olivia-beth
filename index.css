@@ -134,7 +134,7 @@
 }
   
 .w-unset {
-    width: unset;
+    width: unset!important;
   }
 }
 
