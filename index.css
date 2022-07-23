@@ -107,7 +107,7 @@
   box-shadow: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
 
 #menu > .text-sm > a {
   border-bottom: 1px solid var(--faded);
