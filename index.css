@@ -144,7 +144,6 @@ section.hero-img {
 .hero-img {
   background-image: url(imgs/dog-portrait-1.png);
   height: 75vw;
-  width: 100%;
   background-size: cover;
 }
 
