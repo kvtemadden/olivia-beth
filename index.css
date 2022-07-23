@@ -132,6 +132,10 @@
     margin-top: 12vw!important;
     box-sizing: border-box;
 }
+  
+.w-unset {
+    width: unset;
+  }
 }
 
 @media only screen and (max-width: 767px) {
